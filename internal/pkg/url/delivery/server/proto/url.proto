@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package url;
+
+option go_package= "/Users/nick_nak/programs/testForWork/tinyurl/internal/pkg/url/delivery/proto/url.proto";
+
+message Url {
+  string value = 1;
+}
+
+message TinyUrl {
+  string value = 1;
+}
+
+// grpc-сервис создания коротких ссылок
+service DecreaseUrl {
+  rpc Create (Url) returns (TinyUrl) {}
+  rpc Get (TinyUrl) returns (Url) {}
+}
