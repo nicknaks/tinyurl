@@ -102,7 +102,7 @@ func (x *TinyUrl) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use TinyUrl.ProtoReflect.Descriptor instead.
+// Deprecated: Use tinyUrl.ProtoReflect.Descriptor instead.
 func (*TinyUrl) Descriptor() ([]byte, []int) {
 	return file_proto_url_proto_rawDescGZIP(), []int{1}
 }
@@ -151,12 +151,12 @@ func file_proto_url_proto_rawDescGZIP() []byte {
 var file_proto_url_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proto_url_proto_goTypes = []interface{}{
 	(*Url)(nil),     // 0: url.Url
-	(*TinyUrl)(nil), // 1: url.TinyUrl
+	(*TinyUrl)(nil), // 1: url.tinyUrl
 }
 var file_proto_url_proto_depIdxs = []int32{
 	0, // 0: url.DecreaseUrl.Create:input_type -> url.Url
-	1, // 1: url.DecreaseUrl.Get:input_type -> url.TinyUrl
-	1, // 2: url.DecreaseUrl.Create:output_type -> url.TinyUrl
+	1, // 1: url.DecreaseUrl.Get:input_type -> url.tinyUrl
+	1, // 2: url.DecreaseUrl.Create:output_type -> url.tinyUrl
 	0, // 3: url.DecreaseUrl.Get:output_type -> url.Url
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
